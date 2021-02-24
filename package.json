@@ -1,0 +1,27 @@
+{
+  "name": "Whistler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.5.0",
+    "cypress-testing-library": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "husky": "^5.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
