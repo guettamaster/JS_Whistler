@@ -8,6 +8,6 @@ describe("R&A Sign in", function() {
         cy.get(Locators.EMAIL_INPUT_FIELD).type("o.ivankovckyi@aimprosoft.com");
         cy.get(Locators.NEXT_BUTTON).click();
         cy.get(Locators.PASSWORD_INPUT_FIELD).type("Ivanoleg150288#");
-        cy.contains("Sign In").click();
+        cy.contains("Sign In").click();  test
     })
 })
