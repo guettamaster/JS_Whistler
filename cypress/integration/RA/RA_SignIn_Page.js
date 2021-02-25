@@ -9,6 +9,5 @@ describe("R&A Sign in", function() {
         cy.get(Locators.NEXT_BUTTON).click();
         cy.get(Locators.PASSWORD_INPUT_FIELD).type("Ivanoleg150288#");
         cy.contains("Sign In").click();
-        cy.get()
     })
 })
