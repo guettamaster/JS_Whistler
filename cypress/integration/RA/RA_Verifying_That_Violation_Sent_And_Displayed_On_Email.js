@@ -3,18 +3,24 @@ const Locators = require("../../support/Locators")
 describe("RA Verifying That Violation Sent And Displayed On Email", function() {
     it("RA Verifying That Violation Sent And Displayed On Email", function() {
 
-      cy.visit("https://login.yahoo.com/");
+      cy.visit("https://mail.ukr.net/");
       cy.viewport(1920, 1080);
-      cy.title().should("eq", "Yahoo");
       cy.location("protocol").should("eq", "https:");
-      cy.contains("Sign in").should("be.visible");
-      cy.get("input[placeholder=' ']").type("guettamaster", { force: true });
-      cy.get("input[type='submit']").click();
-      // cy.contains("Enter password").should("be.visible");
-      // cy.get("input[class='password-label']").type("ivanoleg15028819");
-      // cy.get(Locators.YAHOO_NEXT_BUTTON_BELOW_PASSWORD_FIELD).click();
-      // cy.contains("Yahoo Mail", {timeout:7000}).should("be.visible");
+      cy.contains("Ім'я скриньки").should("be.visible");
+      cy.contains("Пароль").should("be.visible");
+      cy.contains("Увійти").should("be.visible");
+      cy.get("input[type='text']").type("guettamaster");
+      cy.get("input[type='password']").focus().type("Ivanoleg150288");
+      cy.contains("Увійти").click();
 
+      // cy.get("#login-username")
+      //   .then((el) => {
+      //     el.value = "guettamaster";
+      //       console.log('el.value: ', el.value);
+      //   });
+      // cy.contains("Next").should("be.visible");
+      // cy.wait(1000); //idk if this is needed
+      // cy.get("#login-signin").click({force: true});
 
     })
   })
