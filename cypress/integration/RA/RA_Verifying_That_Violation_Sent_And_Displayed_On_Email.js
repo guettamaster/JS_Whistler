@@ -13,7 +13,6 @@ describe("RA Verifying That Violation Sent And Displayed On Email", function() {
       cy.get("input[type='password']").focus().type("Ivanoleg150288");
       cy.contains("Увійти").click();
 
-
       // cy.get("#login-username")
       //   .then((el) => {
       //     el.value = "guettamaster";
